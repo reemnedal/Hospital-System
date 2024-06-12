@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Medic Care Bootstrap 5 CSS Template</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+
+        <link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+        <link href="css/templatemo-medic-care.css" rel="stylesheet">
+<!--
+
+TemplateMo 566 Medic Care
+
+https://templatemo.com/tm-566-medic-care
+
+-->
+
+<style>
+
+.hero{
+ background-image: url(doctor.jpg);
+ width:100%;
+}
+
+
+body {
+  font-family: "Oxygen", sans-serif;
+  color: #050505;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card_image {
+  position: relative;
+  max-height: 250px;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_price {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 0.25rem;
+  background-color: #0dcaf0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card_price span {
+  font-size: 12px;
+  margin-top: -2px;
+}
+
+.note {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 8px;
+  border-radius: 0.25rem;
+  background-color: #c89b3f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  position: relative;
+  padding: 16px 12px 32px 24px;
+  margin: 16px 8px 8px 0;
+  max-height: 290px;
+  overflow-y: scroll;
+}
+
+.card_content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card_content::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 0;
+}
+
+.card_content::-webkit-scrollbar-thumb {
+  background:#0dcaf0;
+  border-radius: 15px;
+}
+
+.card_title {
+  position: relative;
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card_title::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0dcaf0;
+  content: "";
+}
+
+hr {
+  margin: 24px auto;
+  width: 50px;
+  border-top: 2px solid #0dcaf0;
+}
+
+.card_text p {
+  margin: 0 0 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card_text p:last-child {
+  margin: 0;
+}
+
+
+</style>
+    </head>
+    
+    <body id="top">
+    
+        <main>
+
+            <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+                <div class="container">
+                    <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+                        Medic Care
+                        <strong class="d-block">Health Specialist</strong>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#hero">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#timeline">Timeline</a>
+                            </li>
+
+                            <a class="navbar-brand d-none d-lg-block" href="index.html">
+                                Medic Care
+                                <strong class="d-block">Health Specialist</strong>
+                            </a>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reviews">Testimonials</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#booking">Booking</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+            <section class="hero" id="hero">
+                <div class="container">
+                    <div class="row">
+
+                         <section class="hero">
+
+
+
+
+                         </section>
+ 
+
+ 
+                                <div class="heroLinks d-flex flex-wrap align-items-center">
+ 
+                                 </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </section>
+ 
+            <section class="section-padding" id="booking">
+                <div class="container">
+                    <div class="row">
+                    
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="booking-form">
+
+
+                              <h2 class="text-center mb-lg-3 mb-2">Patients information..</h2>
+
+                                <form role="form" action="" method="post" onsubmit=" return render()" id="form-id">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+                                        </div>
+
+                                        <div class="col-lg-6 col-12">
+                                       <!-- //EMAIL   -->
+
+                                       <input type="password" name="password" id="email"   class="form-control" placeholder="Password" required>
+                                        </div>
+
+                                        <div class="col-lg-6 col-12">
+                                            <input type="telephone"   name="phone" id="phone"  class="form-control" placeholder="Phone: +96279xxxxxxx">
+                                        </div>
+
+                                        <div class="col-lg-6 col-12">
+                                            <input type="date" name="date" id="date" value="date" class="form-control">
+
+                                        </div>
+
+
+
+                                             <div class="col-lg-6 col-12">
+                                                <!-- //EMAIL   -->
+
+                                                <select id="gender" name="gender"  class="form-control" >
+                                                    <option value="female">Female</option>
+                                                    <option value="male">Male</option>
+
+                                                  </select>                                                 </div>
+
+
+
+                                                  <div class="col-lg-6 col-12">
+                                                    <!-- //EMAIL   -->
+
+                                                    <select id="diseases" name="diseases"  class="form-control" >
+                                                        <option value="Heart Disease">Heart Disease</option>
+                                                        <option value="Hypertension">Hypertension</option>
+                                                        <option value="Asthma">Asthma</option>
+                                                        <option value="Cancer">Cancer</option>
+                                                        <option value="No">No</option>
+
+                                                      </select>                                                 </div>
+
+                                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
+                                            <button type="submit" class="form-control" id="submit-button">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+
+<!--
+        <div class="main" id="idFOrJS">
+            <ul class="cards">
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image">
+                    <img src="user .png" alt="mixed vegetable salad in a mason jar." />
+                   </div>
+                  <div class="card_content">
+                    <h2 class="card_title">Full name</h2>
+                    <div class="card_text">
+                      <p>password
+
+                        <div class="card_text">
+                          <p>Phone Number
+                      </p>
+                      <hr />
+                      <p> Date of birth | gender
+                      </p>
+
+<p>
+                      Chronic diseases</p>
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+ -->
+
+
+
+            </ul>
+          </div>
+        <footer class="site-footer section-padding" id="contact">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-5 me-auto col-12">
+                        <h5 class="mb-lg-4 mb-3">Opening Hours</h5>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex">
+                                Sunday : Closed
+                            </li>
+
+                            <li class="list-group-item d-flex">
+                                Monday, Tuesday - Firday
+                                <span>8:00 AM - 3:30 PM</span>
+                            </li>
+
+                            <li class="list-group-item d-flex">
+                                Saturday
+                                <span>10:30 AM - 5:30 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
+                        <h5 class="mb-lg-4 mb-3">Our Clinic</h5>
+
+                        <p><a href="mailto:hello@company.co">hello@company.co</a><p>
+
+                        <p>123 Digital Art Street, San Diego, CA 92123</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 ms-auto">
+                        <h5 class="mb-lg-4 mb-3">Socials</h5>
+
+                        <ul class="social-icon">
+                            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
+                        <p class="copyright-text">Copyright © Medic Care 2021
+                        <br><br>Design: <a href="https://templatemo.com" target="_parent">TemplateMo</a></p>
+                    </div>
+
+                </div>
+            </section>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+         <script src="js/jsStorageTask.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <script src="js/custom.js"></script>
+<!--
+
+TemplateMo 566 Medic Care
+
+https://templatemo.com/tm-566-medic-care
+
+-->
+    </body>
+</html>
