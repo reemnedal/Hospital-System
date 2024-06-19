@@ -296,11 +296,11 @@ hr {
                                         </div>
 
                                         <div class="col-lg-6 col-12">
-                                            <input type="telephone"   name="phone" id="phone"  class="form-control" placeholder="Phone: +96279xxxxxxx">
+                                            <input type="telephone"   name="phone" id="phone"  class="form-control" placeholder="Phone: 079xxxxxxx">
                                         </div>
 
                                         <div class="col-lg-6 col-12">
-                                            <input type="date" name="date" id="date" value="date" class="form-control">
+                                            <input type="date" name="date" id="date" value="date" class="form-control" onchange="formatDate()">
 
                                         </div>
 
@@ -329,10 +329,20 @@ hr {
 
                                                       </select>                                                 </div>
 
+
+                                                      <div class="col-lg-12 col-12">
+                                                        <input type="email" name="email" id="email" value="E-mail" class="form-control"  required>
+            
+                                                    </div>
+
                                         <div class="col-lg-3 col-md-4 col-6 mx-auto">
                                             <button type="submit" class="form-control" id="submit-button">Send</button>
                                         </div>
                                     </div>
+
+
+
+                                    <div class="notification"></div>
                                 </form>
 
                             </div>
